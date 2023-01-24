@@ -70,17 +70,13 @@ public class AgeGroupGenreHeatMapChart implements ExampleChart<HeatMapChart> {
         xData.add("House");
         xData.add("Dubstep");
         xData.add("Riddim");
-        xData.add("Bass");
-        xData.add("DnB/Jungle");
+        xData.add("DnB/Jungle/Breaks");
         xData.add("Trance");
         xData.add("EDM");
         xData.add("Rock");
-        xData.add("Hardstyle");
+        xData.add("Hardstyle/Hardcore");
         xData.add("Trap");
-        xData.add("Hardcore");
         xData.add("Hiphop");
-        xData.add("Psytrance");
-        xData.add("Futurebass");
         xData.add("Other");
 
         List<String> yData = new ArrayList<>();
@@ -92,8 +88,8 @@ public class AgeGroupGenreHeatMapChart implements ExampleChart<HeatMapChart> {
         yData.add("42+");
 
         Number[][] data = new Number[xData.size()*yData.size()][3];
-        String[] genreArray = {"Techno","House","Dubstep","Riddim","Bass","DnB/Jungle","Trance","EDM","Rock",
-                "Hardstyle/Hard Dance", "Trap", "Hardcore", "Hiphop", "Psytrance", "Futurebass", "Other"};
+        String[] genreArray = {"Techno","House","Dubstep","Riddim","DnB/Jungle/Breaks","Trance","EDM","Rock",
+                "Hardstyle/Hardcore", "Trap", "Hiphop", "Other"};
         for (int i = 0; i < genreArray.length * yData.size(); i++) {
             int row = Math.floorDiv(i, yData.size());
             int col = (i % yData.size());

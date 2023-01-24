@@ -48,17 +48,13 @@ public class AgeGroupGenreAreaChart implements ExampleChart<XYChart> {
             chart.addSeries("House", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("House"));
             chart.addSeries("Dubstep", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("Dubstep"));
             chart.addSeries("Riddim", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("Riddim"));
-            chart.addSeries("Bass", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("Bass"));
-            chart.addSeries("DnB/Jungle", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("DnB/Jungle"));
+            chart.addSeries("DnB/Jungle/Breaks", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("DnB/Jungle/Breaks"));
             chart.addSeries("Trance", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("Trance"));
             chart.addSeries("EDM", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("EDM"));
             chart.addSeries("Rock", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("Rock"));
-            chart.addSeries("Hardstyle/Hard Dance", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("Hardstyle/Hard Dance"));
+            chart.addSeries("Hardstyle/Hardcore", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("Hardstyle/Hardcore"));
             chart.addSeries("Trap", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("Trap"));
-            chart.addSeries("Hardcore", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("Hardcore"));
             chart.addSeries("Hiphop", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("Hiphop"));
-            chart.addSeries("Psytrance", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("Psytrance"));
-            chart.addSeries("Futurebass", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("Futurebass"));
             chart.addSeries("Other", new int[]{19, 22, 27, 33, 38, 47}, genreValuesByAgeGroup.get("Other"));
 
             return chart;
@@ -75,17 +71,13 @@ public class AgeGroupGenreAreaChart implements ExampleChart<XYChart> {
             chart.addSeries("House", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("House"));
             chart.addSeries("Dubstep", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("Dubstep"));
             chart.addSeries("Riddim", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("Riddim"));
-            chart.addSeries("Bass", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("Bass"));
-            chart.addSeries("DnB/Jungle", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("DnB/Jungle"));
+            chart.addSeries("DnB/Jungle/Breaks", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("DnB/Jungle/Breaks"));
             chart.addSeries("Trance", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("Trance"));
             chart.addSeries("EDM", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("EDM"));
             chart.addSeries("Rock", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("Rock"));
-            chart.addSeries("Hardstyle/Hard Dance", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("Hardstyle/Hard Dance"));
+            chart.addSeries("Hardstyle/Hardcore", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("Hardstyle/Hardcore"));
             chart.addSeries("Trap", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("Trap"));
-            chart.addSeries("Hardcore", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("Hardcore"));
             chart.addSeries("Hiphop", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("Hiphop"));
-            chart.addSeries("Psytrance", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("Psytrance"));
-            chart.addSeries("Futurebass", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("Futurebass"));
             chart.addSeries("Other", new double[]{19, 22, 27, 33, 38, 47}, genreValuesPercentageByAgeGroup.get("Other"));
             return chart;
         }

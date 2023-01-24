@@ -82,17 +82,13 @@ public class DemographicsParserController {
         genreValues.put("House", house);
         genreValues.put("Dubstep", dubstep);
         genreValues.put("Riddim", riddim);
-        genreValues.put("Bass", bass);
-        genreValues.put("DnB/Jungle", dnbjungle);
+        genreValues.put("DnB/Jungle/Breaks", dnbjungle);
         genreValues.put("Trance", trance);
         genreValues.put("EDM", edm);
         genreValues.put("Rock", rock);
-        genreValues.put("Hardstyle/Hard Dance", hardstyleharddance);
+        genreValues.put("Hardstyle/Hardcore", hardstyleharddance);
         genreValues.put("Trap", trap);
-        genreValues.put("Hardcore", hardcore);
         genreValues.put("Hiphop", hiphop);
-        genreValues.put("Psytrance", psytrance);
-        genreValues.put("Futurebass", futurebass);
         genreValues.put("Other", other);
         return genreValues;
     }
@@ -103,17 +99,13 @@ public class DemographicsParserController {
         genrePercentageValues.put("House", getGenrePercentageArray(genreValues.get("House")));
         genrePercentageValues.put("Dubstep", getGenrePercentageArray(genreValues.get("Dubstep")));
         genrePercentageValues.put("Riddim", getGenrePercentageArray(genreValues.get("Riddim")));
-        genrePercentageValues.put("Bass", getGenrePercentageArray(genreValues.get("Bass")));
-        genrePercentageValues.put("DnB/Jungle", getGenrePercentageArray(genreValues.get("DnB/Jungle")));
+        genrePercentageValues.put("DnB/Jungle/Breaks", getGenrePercentageArray(genreValues.get("DnB/Jungle/Breaks")));
         genrePercentageValues.put("Trance", getGenrePercentageArray(genreValues.get("Trance")));
         genrePercentageValues.put("EDM", getGenrePercentageArray(genreValues.get("EDM")));
         genrePercentageValues.put("Rock", getGenrePercentageArray(genreValues.get("Rock")));
-        genrePercentageValues.put("Hardstyle/Hard Dance", getGenrePercentageArray(genreValues.get("Hardstyle/Hard Dance")));
+        genrePercentageValues.put("Hardstyle/Hardcore", getGenrePercentageArray(genreValues.get("Hardstyle/Hardcore")));
         genrePercentageValues.put("Trap", getGenrePercentageArray(genreValues.get("Trap")));
-        genrePercentageValues.put("Hardcore", getGenrePercentageArray(genreValues.get("Hardcore")));
         genrePercentageValues.put("Hiphop", getGenrePercentageArray(genreValues.get("Hiphop")));
-        genrePercentageValues.put("Psytrance", getGenrePercentageArray(genreValues.get("Psytrance")));
-        genrePercentageValues.put("Futurebass", getGenrePercentageArray(genreValues.get("Futurebass")));
         genrePercentageValues.put("Other", getGenrePercentageArray(genreValues.get("Other")));
         return genrePercentageValues;
     }
@@ -135,49 +127,37 @@ public class DemographicsParserController {
             case "techno", "mid-tempo", "mid", "midtempo" -> {
                 return 1;
             }
-            case "house", "bigroom", "big" -> {
+            case "house" -> {
                 return 2;
             }
-            case "dubstep" -> {
+            case "dubstep", "bass", "futurebass", "spacebass" -> {
                 return 3;
             }
             case "riddim" -> {
                 return 4;
             }
-            case "bass" -> {
-                return 5;
-            }
             case "dnb", "jungle", "d&b", "drum", "drum and bass", "dub", "breaks", "breakbeat" -> {
                 return 6;
             }
-            case "trance" -> {
+            case "trance", "psytrance", "goa" -> {
                 return 7;
             }
-            case "edm" -> {
+            case "edm", "bigroom", "big"  -> {
                 return 8;
             }
             case "rock", "indie", "alt", "metal", "metalcore", "punk", "heavy", "emo" -> {
                 return 9;
             }
-            case "hardstyle", "harddance", "hard", "happy" -> {
+            case "hardstyle", "harddance", "hard", "happy", "hardcore" -> {
                 return 10;
             }
             case "trap" -> {
                 return 11;
             }
-            case "hardcore" -> {
-                return 12;
-            }
             case "hiphop", "hip-hop", "rap", "hip hop", "hip", "hop" -> {
                 return 13;
             }
-            case "psytrance", "goa" -> {
-                return 14;
-            }
-            case "futurebass", "future" -> {
-                return 15;
-            }
-            case "electro", "experimental", "shoegaze", "spacebass", "wakaan", "mid tempo", "funk", "disco", "jazz", "footwork", "pop", "ambient", "electronic", "idm", "garage" -> {
+            case "electro", "experimental", "shoegaze", "wakaan", "mid tempo", "funk", "disco", "jazz", "footwork", "pop", "ambient", "electronic", "idm", "garage" -> {
                 return 16;
             }
             default -> {
